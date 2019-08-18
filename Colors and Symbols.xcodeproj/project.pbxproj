@@ -9,21 +9,38 @@
 /* Begin PBXBuildFile section */
 		88A910DC2309AF5B0062732C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A910DB2309AF5B0062732C /* AppDelegate.swift */; };
 		88A910DE2309AF5B0062732C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A910DD2309AF5B0062732C /* SceneDelegate.swift */; };
-		88A910E02309AF5B0062732C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A910DF2309AF5B0062732C /* ViewController.swift */; };
-		88A910E32309AF5B0062732C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A910E12309AF5B0062732C /* Main.storyboard */; };
+		88A910E02309AF5B0062732C /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A910DF2309AF5B0062732C /* ColorsViewController.swift */; };
 		88A910E52309AF5E0062732C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A910E42309AF5E0062732C /* Assets.xcassets */; };
 		88A910E82309AF5E0062732C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A910E62309AF5E0062732C /* LaunchScreen.storyboard */; };
+		88A910F02309D4A90062732C /* SymbolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A910EF2309D4A90062732C /* SymbolsViewController.swift */; };
+		88A910F22309D4C50062732C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A910F12309D4C50062732C /* MainViewController.swift */; };
+		88A910F42309D7010062732C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A910F32309D7010062732C /* Coordinator.swift */; };
+		88A910F72309D8D50062732C /* UICollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A910F62309D8D50062732C /* UICollectionViewLayout.swift */; };
+		88A910FA2309DB7D0062732C /* SingleLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A910F92309DB7D0062732C /* SingleLabelCell.swift */; };
+		88A910FC2309DBA10062732C /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A910FB2309DBA10062732C /* ColorCell.swift */; };
+		88A910FE2309DBBD0062732C /* SymbolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A910FD2309DBBD0062732C /* SymbolCell.swift */; };
+		88A911002309DDD60062732C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A910FF2309DDD60062732C /* Constants.swift */; };
+		88A911032309E2B60062732C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A911022309E2B60062732C /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		88A910D82309AF5B0062732C /* System Colors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "System Colors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88A910D82309AF5B0062732C /* Colors and Symbols.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colors and Symbols.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A910DB2309AF5B0062732C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88A910DD2309AF5B0062732C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		88A910DF2309AF5B0062732C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		88A910E22309AF5B0062732C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88A910DF2309AF5B0062732C /* ColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
 		88A910E42309AF5E0062732C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88A910E72309AF5E0062732C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88A910E92309AF5E0062732C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88A910EF2309D4A90062732C /* SymbolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsViewController.swift; sourceTree = "<group>"; };
+		88A910F12309D4C50062732C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		88A910F32309D7010062732C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		88A910F62309D8D50062732C /* UICollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewLayout.swift; sourceTree = "<group>"; };
+		88A910F92309DB7D0062732C /* SingleLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLabelCell.swift; sourceTree = "<group>"; };
+		88A910FB2309DBA10062732C /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
+		88A910FD2309DBBD0062732C /* SymbolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCell.swift; sourceTree = "<group>"; };
+		88A910FF2309DDD60062732C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		88A911022309E2B60062732C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		88C86FA02309EB9A00367675 /* System Colors.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "System Colors.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +65,7 @@
 		88A910D92309AF5B0062732C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88A910D82309AF5B0062732C /* System Colors.app */,
+				88A910D82309AF5B0062732C /* Colors and Symbols.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,23 +73,56 @@
 		88A910DA2309AF5B0062732C /* System Colors */ = {
 			isa = PBXGroup;
 			children = (
-				88A910DB2309AF5B0062732C /* AppDelegate.swift */,
-				88A910DD2309AF5B0062732C /* SceneDelegate.swift */,
-				88A910DF2309AF5B0062732C /* ViewController.swift */,
-				88A910E12309AF5B0062732C /* Main.storyboard */,
-				88A910E42309AF5E0062732C /* Assets.xcassets */,
-				88A910E62309AF5E0062732C /* LaunchScreen.storyboard */,
+				88C86FA02309EB9A00367675 /* System Colors.entitlements */,
 				88A910E92309AF5E0062732C /* Info.plist */,
+				88A910DB2309AF5B0062732C /* AppDelegate.swift */,
+				88A910FF2309DDD60062732C /* Constants.swift */,
+				88A910F32309D7010062732C /* Coordinator.swift */,
+				88A910DD2309AF5B0062732C /* SceneDelegate.swift */,
+				88A910E42309AF5E0062732C /* Assets.xcassets */,
+				88A910F82309DB5F0062732C /* Cells */,
+				88A910F52309D8B80062732C /* Extensions */,
+				88A910E62309AF5E0062732C /* LaunchScreen.storyboard */,
+				88A911012309E0EC0062732C /* View Controllers */,
+				88A911022309E2B60062732C /* SearchView.swift */,
 			);
 			path = "System Colors";
+			sourceTree = "<group>";
+		};
+		88A910F52309D8B80062732C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				88A910F62309D8D50062732C /* UICollectionViewLayout.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		88A910F82309DB5F0062732C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				88A910F92309DB7D0062732C /* SingleLabelCell.swift */,
+				88A910FB2309DBA10062732C /* ColorCell.swift */,
+				88A910FD2309DBBD0062732C /* SymbolCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		88A911012309E0EC0062732C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88A910F12309D4C50062732C /* MainViewController.swift */,
+				88A910DF2309AF5B0062732C /* ColorsViewController.swift */,
+				88A910EF2309D4A90062732C /* SymbolsViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		88A910D72309AF5B0062732C /* System Colors */ = {
+		88A910D72309AF5B0062732C /* Colors and Symbols */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88A910EC2309AF5E0062732C /* Build configuration list for PBXNativeTarget "System Colors" */;
+			buildConfigurationList = 88A910EC2309AF5E0062732C /* Build configuration list for PBXNativeTarget "Colors and Symbols" */;
 			buildPhases = (
 				88A910D42309AF5B0062732C /* Sources */,
 				88A910D52309AF5B0062732C /* Frameworks */,
@@ -82,9 +132,9 @@
 			);
 			dependencies = (
 			);
-			name = "System Colors";
+			name = "Colors and Symbols";
 			productName = "System Colors";
-			productReference = 88A910D82309AF5B0062732C /* System Colors.app */;
+			productReference = 88A910D82309AF5B0062732C /* Colors and Symbols.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +152,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 88A910D32309AF5B0062732C /* Build configuration list for PBXProject "System Colors" */;
+			buildConfigurationList = 88A910D32309AF5B0062732C /* Build configuration list for PBXProject "Colors and Symbols" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +165,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				88A910D72309AF5B0062732C /* System Colors */,
+				88A910D72309AF5B0062732C /* Colors and Symbols */,
 			);
 		};
 /* End PBXProject section */
@@ -127,7 +177,6 @@
 			files = (
 				88A910E82309AF5E0062732C /* LaunchScreen.storyboard in Resources */,
 				88A910E52309AF5E0062732C /* Assets.xcassets in Resources */,
-				88A910E32309AF5B0062732C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +187,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88A910E02309AF5B0062732C /* ViewController.swift in Sources */,
+				88A910E02309AF5B0062732C /* ColorsViewController.swift in Sources */,
+				88A911002309DDD60062732C /* Constants.swift in Sources */,
+				88A910F72309D8D50062732C /* UICollectionViewLayout.swift in Sources */,
+				88A910FA2309DB7D0062732C /* SingleLabelCell.swift in Sources */,
+				88A911032309E2B60062732C /* SearchView.swift in Sources */,
+				88A910FE2309DBBD0062732C /* SymbolCell.swift in Sources */,
+				88A910FC2309DBA10062732C /* ColorCell.swift in Sources */,
 				88A910DC2309AF5B0062732C /* AppDelegate.swift in Sources */,
+				88A910F42309D7010062732C /* Coordinator.swift in Sources */,
+				88A910F02309D4A90062732C /* SymbolsViewController.swift in Sources */,
 				88A910DE2309AF5B0062732C /* SceneDelegate.swift in Sources */,
+				88A910F22309D4C50062732C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		88A910E12309AF5B0062732C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88A910E22309AF5B0062732C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		88A910E62309AF5E0062732C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "System Colors/System Colors.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K2T5FY27PH;
 				INFOPLIST_FILE = "System Colors/Info.plist";
@@ -293,6 +344,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eduardomoll.System-Colors";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,6 +354,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "System Colors/System Colors.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K2T5FY27PH;
 				INFOPLIST_FILE = "System Colors/Info.plist";
@@ -311,6 +364,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eduardomoll.System-Colors";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -319,7 +373,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		88A910D32309AF5B0062732C /* Build configuration list for PBXProject "System Colors" */ = {
+		88A910D32309AF5B0062732C /* Build configuration list for PBXProject "Colors and Symbols" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				88A910EA2309AF5E0062732C /* Debug */,
@@ -328,7 +382,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88A910EC2309AF5E0062732C /* Build configuration list for PBXNativeTarget "System Colors" */ = {
+		88A910EC2309AF5E0062732C /* Build configuration list for PBXNativeTarget "Colors and Symbols" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				88A910ED2309AF5E0062732C /* Debug */,
