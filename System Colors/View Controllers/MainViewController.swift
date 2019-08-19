@@ -45,7 +45,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Main Menu"
+        navigationItem.title = "Symbols and Colors"
         collectionView.dataSource = self
         collectionView.delegate = self
     }

@@ -80,6 +80,7 @@ class ColorsViewController: UIViewController {
         segmentedControl.addTarget(self, action: #selector(switchTheme(_:)), for: .valueChanged)
         self.navigationItem.titleView = segmentedControl
         segmentedControl.selectedSegmentIndex = 0
+        navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
     }
     
     @objc private func switchTheme(_ sender: UISegmentedControl) {

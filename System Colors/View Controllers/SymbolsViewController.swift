@@ -50,6 +50,7 @@ class SymbolsViewController: UIViewController {
         searchController.searchResultsUpdater = self
         searchController.searchBar.sizeToFit()
         searchController.obscuresBackgroundDuringPresentation = false
+        navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
     }
 }
 
