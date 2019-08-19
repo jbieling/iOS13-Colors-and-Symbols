@@ -19,7 +19,7 @@ class SingleLabelCell: UICollectionViewCell {
     
     private let separator: UIView = {
         let view = UIView()
-        view.backgroundColor = .separator
+        view.backgroundColor = .systemGray6
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()

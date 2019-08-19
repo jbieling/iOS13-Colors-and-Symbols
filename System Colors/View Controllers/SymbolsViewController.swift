@@ -19,6 +19,7 @@ class SymbolsViewController: UIViewController {
         collectionView.register(SearchView.self, forSupplementaryViewOfKind: "header", withReuseIdentifier: "header")
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.backgroundColor = .systemBackground
+        collectionView.keyboardDismissMode = .onDrag
         return collectionView
     }()
     
