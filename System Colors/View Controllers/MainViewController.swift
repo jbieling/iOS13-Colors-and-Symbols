@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
     
     let options: [MainMenuOption] = [
         MainMenuOption(title: "Colors"),
+        MainMenuOption(title: "Effects"),
         MainMenuOption(title: "Symbols")
     ]
     
@@ -67,10 +68,19 @@ extension MainViewController: UICollectionViewDataSource {
 
 extension MainViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
+        switch indexPath.row
+        {
+        case 0:
             coordinator.showColors()
-        } else {
+            break
+        case 1:
+            coordinator.showEffects()
+            break
+        case 2:
             coordinator.showSymbols()
+            break
+        default:
+            break;
         }
     }
 }

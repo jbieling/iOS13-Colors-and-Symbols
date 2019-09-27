@@ -25,7 +25,12 @@ class Coordinator {
         let colorsViewController = ColorsViewController()
         navigationController.pushViewController(colorsViewController, animated: true)
     }
-    
+
+    func showEffects() {
+        let effectsViewController = EffectsViewController()
+        navigationController.pushViewController(effectsViewController, animated: true)
+    }
+
     func showSymbols() {
         let symbolViewController = SymbolsViewController(symbols: symbols)
         navigationController.pushViewController(symbolViewController, animated: true)
