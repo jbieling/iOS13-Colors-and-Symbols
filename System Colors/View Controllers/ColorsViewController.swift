@@ -58,7 +58,12 @@ class ColorsViewController: UIViewController {
                   Color(name: "System Fill", color: .systemFill),
                   Color(name: "Secondary System Fill", color: .secondarySystemFill),
                   Color(name: "Tertiary System Fill", color: .tertiarySystemFill),
-                  Color(name: "Quaternary System Fill", color: .quaternarySystemFill)
+                  Color(name: "Quaternary System Fill", color: .quaternarySystemFill),
+                  Color(name: "Dark Text", color: .darkText),
+                  Color(name: "Light Text", color: .lightText),
+                  Color(name: "Dark Gray", color: .darkGray),
+                  Color(name: "Light Gray", color: .lightGray),
+                  Color(name: "Group Table View Background", color: .groupTableViewBackground)
         ]
         super.init(nibName: nil, bundle: nil)
     }
@@ -92,6 +97,8 @@ class ColorsViewController: UIViewController {
         default:
             fatalError("Invalid Index")
         }
+
+        collectionView.reloadItems(at: collectionView.indexPathsForVisibleItems)
     }
 }
 
