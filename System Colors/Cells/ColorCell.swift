@@ -16,7 +16,7 @@ extension UIColor {
         var a:CGFloat = 0
 
         getRed(&r, green: &g, blue: &b, alpha: &a)
-        return NSString(format:"#%02x%02x%02x", (Int(r) & 255), (Int(g) & 255), (Int(b) & 255)) as String
+        return NSString(format:"#%02x%02x%02x", (Int(r * 255) & 255), (Int(g * 255) & 255), (Int(b * 255) & 255)) as String
     }
 }
 
