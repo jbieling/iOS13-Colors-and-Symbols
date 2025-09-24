@@ -35,4 +35,9 @@ class Coordinator {
         let symbolViewController = SymbolsViewController(symbols: symbols)
         navigationController.pushViewController(symbolViewController, animated: true)
     }
+
+    func showCornerRadius() {
+        let radiusViewController = CornerRadiusViewController()
+        navigationController.pushViewController(radiusViewController, animated: true)
+    }
 }

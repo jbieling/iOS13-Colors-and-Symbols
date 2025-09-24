@@ -19,7 +19,8 @@ class MainViewController: UIViewController {
     let options: [MainMenuOption] = [
         MainMenuOption(title: "Colors"),
         MainMenuOption(title: "Effects"),
-        MainMenuOption(title: "Symbols")
+        MainMenuOption(title: "Symbols"),
+        MainMenuOption(title: "Corner Radius")
     ]
     
     private var collectionView: UICollectionView = {
@@ -78,6 +79,9 @@ extension MainViewController: UICollectionViewDelegate {
             break
         case 2:
             coordinator.showSymbols()
+            break
+        case 3:
+            coordinator.showCornerRadius()
             break
         default:
             break;
