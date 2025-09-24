@@ -10,13 +10,26 @@ import UIKit
 
 struct Effect {
     let name: String
-    let style: UIBlurEffect.Style
+    let effect: UIVisualEffect
+
+    init(name: String, blurStyle: UIBlurEffect.Style)
+    {
+        self.name = name
+        self.effect = UIBlurEffect(style: blurStyle)
+    }
+
+    @available(iOS 26.0, *)
+    init(name: String, glassStyle: UIGlassEffect.Style)
+    {
+        self.name = name
+        self.effect = UIGlassEffect(style: glassStyle)
+    }
 }
 
 class EffectsViewController: UIViewController {
     
-    let effects: [Effect]
-    
+    var effects: [Effect]
+
     private var collectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: .gridLayout())
         collectionView.register(EffectCell.self, forCellWithReuseIdentifier: EffectCell.reuseID)
@@ -27,27 +40,34 @@ class EffectsViewController: UIViewController {
     
     init() {
 
-        effects = [ Effect(name: "Extra Light", style: .extraLight),
-                    Effect(name: "Light", style: .light),
-                    Effect(name: "Dark", style: .dark),
-                    Effect(name: "Regular", style: .regular),
-                    Effect(name: "Prominent", style: .prominent),
-                    Effect(name: "System UltraThin Material", style: .systemUltraThinMaterial),
-                    Effect(name: "System Thin Material", style: .systemThinMaterial),
-                    Effect(name: "System  Material", style: .systemMaterial),
-                    Effect(name: "System Thick Material", style: .systemThickMaterial),
-                    Effect(name: "System Chrome Material", style: .systemChromeMaterial),
-                    Effect(name: "System Ultra Thin  Material Light", style: .systemUltraThinMaterialLight),
-                    Effect(name: "System Thin Material Light", style: .systemThinMaterialLight),
-                    Effect(name: "System Material Light", style: .systemMaterialLight),
-                    Effect(name: "System Thick Material Light", style: .systemThickMaterialLight),
-                    Effect(name: "System Chrome Material Light", style: .systemChromeMaterialLight),
-                    Effect(name: "System Ultra Thin Material Dark", style: .systemUltraThinMaterialDark),
-                    Effect(name: "System Thin Material Dark", style: .systemThinMaterialDark),
-                    Effect(name: "System Material Dark", style: .systemMaterialDark),
-                    Effect(name: "System Thick Material Dark", style: .systemThickMaterialDark),
-                    Effect(name: "System Chrome Material Dark", style: .systemChromeMaterialDark)
+        effects = [ Effect(name: "Light", blurStyle: .light),
+                    Effect(name: "Extra Light", blurStyle: .extraLight),
+                    Effect(name: "Light", blurStyle: .light),
+                    Effect(name: "Dark", blurStyle: .dark),
+                    Effect(name: "Regular", blurStyle: .regular),
+                    Effect(name: "Prominent", blurStyle: .prominent),
+                    Effect(name: "System UltraThin Material", blurStyle: .systemUltraThinMaterial),
+                    Effect(name: "System Thin Material", blurStyle: .systemThinMaterial),
+                    Effect(name: "System  Material", blurStyle: .systemMaterial),
+                    Effect(name: "System Thick Material", blurStyle: .systemThickMaterial),
+                    Effect(name: "System Chrome Material", blurStyle: .systemChromeMaterial),
+                    Effect(name: "System Ultra Thin  Material Light", blurStyle: .systemUltraThinMaterialLight),
+                    Effect(name: "System Thin Material Light", blurStyle: .systemThinMaterialLight),
+                    Effect(name: "System Material Light", blurStyle: .systemMaterialLight),
+                    Effect(name: "System Thick Material Light", blurStyle: .systemThickMaterialLight),
+                    Effect(name: "System Chrome Material Light", blurStyle: .systemChromeMaterialLight),
+                    Effect(name: "System Ultra Thin Material Dark", blurStyle: .systemUltraThinMaterialDark),
+                    Effect(name: "System Thin Material Dark", blurStyle: .systemThinMaterialDark),
+                    Effect(name: "System Material Dark", blurStyle: .systemMaterialDark),
+                    Effect(name: "System Thick Material Dark", blurStyle: .systemThickMaterialDark),
+                    Effect(name: "System Chrome Material Dark", blurStyle: .systemChromeMaterialDark)
             ]
+        if #available(iOS 26.0, *)
+        {
+            effects.insert(Effect(name: "Clear Glass", glassStyle: .clear), at: 0)
+            effects.insert(Effect(name: "Glass", glassStyle: .regular), at: 0)
+
+        }
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -81,7 +101,10 @@ class EffectsViewController: UIViewController {
             fatalError("Invalid Index")
         }
 
-        collectionView.reloadItems(at: collectionView.indexPathsForVisibleItems)
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.collectionView.reloadItems(at: self.collectionView.indexPathsForVisibleItems)
+        }
     }
 }
 

@@ -15,6 +15,7 @@ class EffectCell: UICollectionViewCell {
         let view = UIVisualEffectView()
         view.clipsToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.layer.cornerRadius = 50
         return view
     }()
 
@@ -67,7 +68,7 @@ class EffectCell: UICollectionViewCell {
     }
     
     func populate(with effect: Effect) {
-        effectView.effect = UIBlurEffect(style: effect.style)
+        effectView.effect = effect.effect
         nameLabel.text = effect.name
     }
 }
