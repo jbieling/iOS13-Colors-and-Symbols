@@ -98,7 +98,10 @@ class ColorsViewController: UIViewController {
             fatalError("Invalid Index")
         }
 
-        collectionView.reloadItems(at: collectionView.indexPathsForVisibleItems)
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.collectionView.reloadItems(at: self.collectionView.indexPathsForVisibleItems)
+        }
     }
 }
 
